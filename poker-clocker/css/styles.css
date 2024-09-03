@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo, .tournament-name, .current-level {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.rankings {
+    width: 20%;
+}
+
+.rankings h2 {
+    font-size: 24px;
+}
+
+.rankings ol {
+    padding-left: 20px;
+}
+
+.rankings li {
+    list-style-type: none;
+}
+
+.timer-section {
+    width: 50%;
+    text-align: center;
+}
+
+.timer {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.blinds, .next-level {
+    margin: 10px 0;
+}
+
+.additional-info {
+    width: 20%;
+    text-align: center;
+}
+
+.controls {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+
+.controls button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #282c34;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.setup input, .setup select {
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px;
+}

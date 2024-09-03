@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>德州撲克計時器</title>
+    <link rel="stylesheet" href="typicons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="./img/kkpoker-title.png">
+            </div>
+            <div class="tournament-name" id="tournamentNameDisplay">賽別名稱</div>
+            <div class="current-level">LEVEL <span id="currentLevel">1</span></div>
+        </header>
+        
+        <div class="main-content">
+            <div class="rankings">
+                <ol id="rankingsTitle">
+                    <li> 1ST</li>
+                    <li> 2ND</li>
+                    <li> 3RD</li>
+                    <li> 4TH</li>
+                    <li> 5TH</li>
+                    <li> 6TH</li>
+                    <li> 7TH</li>
+                    <li> 8TH</li>
+                    <li> 9TH</li>
+                    <li>10TH</li>
+                </ol>
+                <ol id="rankingsList">
+                    <!-- 填入名次 -->
+                </ol>
+            </div>
+            <div class="timer-section">
+                <div class="timer">
+                    <p id="time">60:00</p>
+                </div>
+                <div class="blinds">
+                    <div id="blindsContainer">
+                        <div class="blindsDisplay">
+                            <p class="floatLeft titleYellow">&nbsp;BLINDS</p>
+                            <p class="floatRight"><span id="smallBlind">1000</span> / <span id="bigBlind">2000</span>&nbsp;</p>
+                        </div>
+                        <div class="blindsDisplay">
+                            <p class="floatLeft titleYellow">&nbsp;ANTE</p>
+                            <p class="floatRight"><span id="ante">1000</span>&nbsp;</p>
+                        </div>
+                        <div class="blindsDisplay">
+                            <p class="floatLeft titleYellow">&nbsp;NEXT LEVEL</p>
+                            <p class="floatRight"><span id="nextLevelBlinds">1000</span>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-info">
+                <div class="border">
+                    <p class="titleYellow"><span id="nextTitle">NEXT BREAK IN</span></p>
+                    <p ><span id="nextLevelTimer" class="additional-info-font">60:00</span></p>
+                </div>
+                <div class="border">
+                    <p class="titleYellow">AVG STACK</p>
+                    <p ><span id="averageStack" class="additional-info-font">0</span></p>
+                </div>
+                <div>
+                    <p class="titleYellow">PLAYERS</p>
+                    <p ><span id="totalBuyIns" class="additional-info-font">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="settingsButton"><span class="typcn typcn-cog-outline"></span></button>
+            <button id="startButton"><span id="startIcon" class="typcn typcn-media-play"></span></button>
+        </div>
+        <div class="content">
+            <p id="content">獎池提撥 第一名 $500 第二名 $300 第三名 $200</p>
+        </div>
+        <div id="settingsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>設置比賽參數</h2>
+                <label for="tournamentSelect">選擇賽別: </label>
+                <select id="tournamentSelect">
+                    <option value="3400">3400限時錦標賽</option>
+                    <option value="6600">6600限時錦標賽</option>
+                    <option value="11000">11000限時錦標賽</option>
+                    <option value="21500">21500限時錦標賽</option>
+                    <option value="32000">32000限時錦標賽</option>
+                    <option value="custom">自訂賽別</option>
+                </select>
+                <br>
+                <div id="customTournamentSetup" style="display: none;">
+                    <label for="customTournamentName">賽別名稱: </label>
+                    <input type="text" id="customTournamentName" placeholder="自訂賽別名稱">
+                    <br>
+                    <!-- 自訂賽別選項 -->
+                </div>
+                <label for="levelSelect">選擇Level: </label>
+                <select id="levelSelect">
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                </select>
+                <br>
+                <label for="timeInput">設置時間 (分鐘): </label>
+                <input type="number" id="timeInput" value="60">
+                <br>
+                <label for="smallBlindInput">Small Blind: </label>
+                <input type="number" id="smallBlindInput" value="1000" step="1000">
+                <br>
+                <label for="bigBlindInput">Big Blind: </label>
+                <input type="number" id="bigBlindInput" value="2000" step="1000">
+                <br>
+                <label for="anteInput">Ante: </label>
+                <input type="number" id="anteInput" value="1000" >
+                <br>
+                <label for="averageStackInput">平均碼量: </label>
+                <input type="number" id="averageStackInput" value="0">
+                <br>
+                <label for="totalBuyInsInput">總買入數: </label>
+                <input type="number" id="totalBuyInsInput" value="0">
+                <br>
+                <button id="applySettingsButton">應用設置</button>
+                <br>
+                <label for="rankingsInput">名次:</label>
+                <br>
+                <input type="text" class="rankingInput" placeholder="第一名">
+                <input type="text" class="rankingInput" placeholder="第二名">
+                <input type="text" class="rankingInput" placeholder="第三名">
+                <input type="text" class="rankingInput" placeholder="第四名">
+                <input type="text" class="rankingInput" placeholder="第五名">
+                <input type="text" class="rankingInput" placeholder="第六名">
+                <input type="text" class="rankingInput" placeholder="第七名">
+                <input type="text" class="rankingInput" placeholder="第八名">
+                <input type="text" class="rankingInput" placeholder="第九名">
+                <input type="text" class="rankingInput" placeholder="第十名">
+                <br>
+                
+            </div>
+        </div>
+        <audio id="endSound" src="./endSound.mp3" preload="auto"></audio>
+        <audio id="startSound" src="./startSound.mp3" preload="auto"></audio>
+        <audio id="minuteSound" src="./minuteSound.mp3" preload="auto"></audio>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
