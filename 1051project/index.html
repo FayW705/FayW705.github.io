@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>留一盞燈-靜宜大學資傳系105年進階數位作品</title>
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+    <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/wipe.js"></script>
+    
+</head>
+<body>
+    <div id="team" class="col-md-3">
+        <img id="team1" src="img/team.png"/>
+        <img id="team2" src="img/team1.png"/>
+    </div>
+    <article id="facebook" onclick="social(2)">
+        <div class="cancel"><a href="#" onclick="social(2)">X</a></div>
+        <div class="fb-page" style="position:absolute;width:500px;" data-href="https://www.facebook.com/MEATTEAM.Studio/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/MEATTEAM.Studio/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/MEATTEAM.Studio/">Meatteam謎團工作室</a></blockquote></div>
+        
+    </article>
+    <article id="meatteam" class="container-fluid">
+        <div id="meatteam_bg"  onclick="meatteam(2)"></div>
+        <div id="meatteam_content">
+            <div class="col-md-7">
+                <div class="meatteam_img" id="martin">
+                    <img src="./img/martin.JPG" />
+                </div>
+                <div class="meatteam_img" id="edison">
+                    <img src="./img/edison.jpg" />
+                </div>
+                <div class="meatteam_img" id="anny">
+                    <img src="./img/anny.jpg" />
+                </div>
+                <div class="meatteam_img" id="ted">
+                    <img src="./img/ted.JPG" />
+                </div>
+                <div class="meatteam_img" id="MT">
+                    <img src="./img/meatteam.jpg" />
+                </div>
+            </div>
+            <div class="col-md-5 tab">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" onclick="meatteam_img(5)" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    MEATTEAM.Studio謎團工作室
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="meatteam_img(1)" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Martin 許庭嘉
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                分鏡/攝影/收音/特效/美術
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="meatteam_img(2)" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Edison 林子竣
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                導演/分鏡/攝影/配樂/剪輯
+                                <br />
+                                <br />
+                                想當一個說故事的人
+                                <br />
+                                用鏡頭、用雙眼
+                                <br />
+                                用我的冒險經驗
+                                <br />
+                                不怕被笑的夢想，將待實現
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="meatteam_img(3)" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Anny 鄭渝蓉
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                文書/攝影/場記/音效/字幕
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="meatteam_img(4)" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Ted 吳旻鍵
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                企劃/成音/網站/美術
+                                <br />
+                                <br />
+                                創意總監，從小夢想的職稱。
+                                <br />
+                                MEATTEAM的T，不只是英文名字Ted，也代表Transform改變。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </article>
+    <article id="actor" class="container-fluid">
+        <div id="actor_bg" onclick="actor(2)"></div>
+        <div id="actor_content">
+            <div class="col-md-7">
+                <div class="actor_img" id="z">
+                    <img src="./img/7.png" />
+                </div>
+                <div class="actor_img" id="z1">
+                    <img src="./img/2.png" />
+                </div>
+                <div class="actor_img" id="z2">
+                    <img src="./img/1.png" />
+                </div>
+                <div class="actor_img" id="z3">
+                    <img src="./img/IMG_0148.JPG" />
+                </div>
+                <div class="actor_img" id="z4">
+                    <img src="./img/8.png" />
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" onclick="actor_img(5)" data-parent="#accordion1" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                                    鄭偉廷
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
+                            <div class="panel-body">
+                                偉廷為一名DJ，因青少年時常與父親起爭執，長大後因在外地工作，少與父親連絡。在一次接到父親病危的電話後，開始回憶起與父親的種種，當父親離開後，男主角才後悔了當初來不及說出口的愛。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="actor_img(1)" data-toggle="collapse" data-parent="#accordion1" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                                    鄭偉廷(年幼時)
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                            <div class="panel-body">
+                                故事設定為十歲左右，正值與父親最親近的時期，試父親為偶像。在一次演講比賽中以「我的爸爸」為主題，表達對父親的感謝，能夠如此輕易表達出愛的童心，與長大後對父親叛逆的他形成對比。
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="actor_img(2)" data-toggle="collapse" data-parent="#accordion1" href="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                                    父親
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                父親與兒子之間一種難以言喻的關係，當兒子漸漸長大，面子就成了表達愛的絆腳石。每位父親在家庭中扮演的腳色都不同，也許和藹，也許嚴肅，但對於孩子的關愛是無法如此輕易被否定的。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="actor_img(3)" data-toggle="collapse" data-parent="#accordion1" href="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                                    李晨
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                咖啡廳的店員，也是鄭偉廷的好朋友，清楚鄭偉廷心裡對父親的話念，是默默支持他的夥伴。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" onclick="actor_img(4)" data-toggle="collapse" data-parent="#accordion1" href="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                                    若茵
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                電台的另一名女DJ，聲線與長相甜美，以他的廣播節目帶出鄭偉廷成為DJ後的日常。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+    <article id="youtube">
+
+    </article>
+    <article id="play" onclick="playon(2)">
+        <div id="play_waiting">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0spZRNnCi-Q" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!--<div id="waiting">
+            <h1>我們將於2016/12/28正式上映</h1>
+        </div>-->
+    </article>
+    <article id="story" onclick="story(2)">
+        <div id="story_content">
+            <h1>故事大綱</h1>
+            <br />
+            <br />
+            　　一通突如即來的電話，劃破壓抑已久的情感，故事從此開始。運用交錯的時間軸，講述男主角和爸爸之間最平淡的感情，由細節描繪男主角在成長過程中與爸爸關係的種種變化，從交女朋友、叛逆等青少年期間經歷的事情，來呈現父子之間說不出口的愛。
+            <br />
+            <br />
+            　　男主角是一名DJ，故事從小時候的演講比賽開始，再由一通緊急電話加速影片節奏，使用倒敘法講述男主角的過去，其中穿插DJ與聽眾分享爸爸故事的畫面和聲音，最後時間軸回到現在，男主角與聽眾分享的最後一段話，是把握、珍惜和勇敢面對與父親之間的感情，不要等到父親年華老去才後悔，本片並沒有太多彭湃的情緒，大多是細節的深刻描繪，要讓觀眾在影片中，找到貼近自己的感動。
+        </div>
+    </article>
+    
+    <!--<div id="wipe"></div>-->
+    <header class="container-fluid">
+        
+        <nav id="nav_bar"class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" id="nav_logo" href="index.html">
+                        <img alt="Brand" src="img/meat_logo.png"/>
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="">回首頁</a></li>
+                        <li><a href="#" onclick="playon(1)">正片播放</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">最新消息 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="social(1)">Facebook粉絲專頁</a></li>
+                                <li class="divider"></li>
+                                <li><a href="https://www.youtube.com/channel/UCE4D_tWFo2HOGeyWmzSc9Xg" target="_blank">Youtube頻道</a></li>
+                                
+                                <li><a href="https://www.instagram.com/meatteam.studio/" target="_blank">Instagram</a></li>
+                                
+                               
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">故事介紹 <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" onclick="story(1)">故事大綱</a></li>
+                                <li><a href="#" onclick="place(1)">場景設定</a></li>
+                                <li><a href="#" onclick="actor(1)">角色檔案</a></li>
+                            </ul>
+                        </li>
+                        
+                        
+                        <li><a href="#" onclick="meatteam(1)">關於MEATTEAM</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container-fluid" style="position:absolute">
+            <div id="video" class="">
+
+            </div>
+            <div id="logo" class="col-md-6">
+                <img src="img/logo1.png" />
+            </div>
+        </div>
+        <article id="place" >
+            <div id="place_bg" onclick="place(2)"></div>
+            <div id="place_content" class="container">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./img/1.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景一</h3>
+                                <p>爸，你現在雖然離不開我，但我們之間的關係早就回不去了對吧？</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/2.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景二</h3>
+                                <p>記得小時候還會吵著你帶我出去玩，但在那之後都變了。還記得那次小學二年級上台演講，題目是「我的爸爸」…</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img src="./img/3.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景三</h3>
+                                <p>又是這個夢，為什麼你那麼常出現在我的夢中？明明從那之後，我們之間就有了無法修補的隔閡。</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/4.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景四</h3>
+                                <p>總是趁工作空閒之餘，坐在這望著窗外，我在想什麼呢？是你嗎？常常出現在我夢中的那個你。</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img src="./img/5.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景五</h3>
+                                <p>你現在有看到我的成就嗎？大家都很喜歡聽我說我們的故事呢！你在那裏是不是也過得不錯呢？</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/6.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景六</h3>
+                                <p>儘管我們在那段時期之後，總是不溝通，但你畢竟還是我爸，你會好起來的對吧？</p>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <img src="./img/7.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景七</h3>
+                                <p>「爸，你人呢？」，你走了之後，我們那原本沉默的羈絆，只剩下絕望、無助和後悔。</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./img/8.png" alt="...">
+                            <div class="carousel-caption">
+                                <h3>場景八</h3>
+                                <p>一句「幾點了？」，原來你是那麼有耐心地對待我，為什麼我能這麼殘忍的對你，回想起來我們真是倔強，也難怪我們是父子。</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </article>
+    </header>
+    
+    
+
+    <!--<footer class="container-fluid">
+        
+        <div class="col-md-2">
+            <span>最新消息</span>
+            <a href="#" onclick="social(1)">Facebook粉絲專頁</a>
+            <a href="https://www.youtube.com/channel/UCE4D_tWFo2HOGeyWmzSc9Xg">Youtube頻道</a>
+            
+            <a href="https://www.instagram.com/meatteam.studio/">Instagram</a>
+        </div>
+        <div class="col-md-2">
+            <span>故事介紹</span>
+            <a href="#">故事大綱</a>
+            <a href="#">場景設定</a>
+            <a href="#"></a>
+        </div>
+        <div class="col-md-2">
+            <span>角色檔案</span>
+            
+        </div>
+        <div class="col-md-2">
+            <span>關於MEATTEAM</span>
+          
+            <a href="#">Martin</a>
+            <a href="#">Edison</a>
+            <a href="#">Anny</a>
+            <a href="#">Ted</a>
+        </div>
+        <div id="social" class="col-md-2">
+            <a target="_blank" href="https://www.facebook.com/MEATTEAM.Studio/"><img src="img/fb.png" /></a>
+            <a target="_blank" href="https://www.instagram.com/meatteam.studio/"><img src="img/ig.png" /></a>
+        </div>
+        <div class="col-md-2">
+            <p>meatteam.studio@gmail.com</p>
+            <p>0930-258-679</p>
+            <p></p>
+        </div>
+    </footer>-->
+    <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+	var wipe = new Wipe({
+		el: '#wipe',
+		fg: '/img/Header_BG-013.jpg',
+		size: 500,
+		debug: false,
+		autoWipe: false,
+		data: [],
+		onswiping: function (percent) {
+		    if (percent <= 0) return;
+		    if (percent = 100) {
+		        $("#logo").animate({ opacity: "1" },2000,function() {
+		            $("#wipe").animate({opacity: "0"},500,function() {
+		                $("#wipe").animate({opacity: "0"})
+		            });
+		        });
+		    }
+		}
+	})
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=465297146977944";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="js/social.js"></script>
+</body>
+</html>

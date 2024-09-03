@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="zh-hant-TW" prefix='og: http://ogp.me/ns#'>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="嚞醬串燒的由來以及經營理念" />
+    <meta name="author" content="FayWu" />
+    <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico" />
+    <title>嚞醬串燒-復活節島459號站-關於本店</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/slide.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <meta property="og:title" content="嚞醬串燒-復活節島459號站" />
+    <meta property="og:url" content="http://www.cs.pu.edu.tw/~s1031623/1041project/" />
+    <meta property="og:description" content="鑒於台中海線地區沒有市區繁華，想吃串燒的客人，以往都得驅車前往市區。於是，我們在2015年7月於沙鹿北勢東商圈內成立，店內不只裝潢很有特色，我們更有自創菜色。我們絕對推薦您前來品嘗！" />
+    <meta property="og:site_name" content="嚞醬串燒-復活節島459號站" />
+    <meta property="og:image" content="http://www.cs.pu.edu.tw/~s1031623/1041project/image/fb.jpg" />
+    <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+    <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/base.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVGLm5kn2KwQ5VDgaHW35sq3KzTle121A&signed_in=true"></script>
+    <script>
+        // In the following example, markers appear when the user clicks on the map.
+        // Each marker is labeled with a single alphabetical character.
+        var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var labelIndex = 0;
+
+        function initialize() {
+            var bangalore = { lat: 24.223333, lng: 120.577370 };
+            var map = new google.maps.Map(document.getElementById('dynamic_map'), {
+            zoom: 16,
+            center: bangalore
+          });
+
+          // This event listener calls addMarker() when the map is clicked.
+          google.maps.event.addListener(map, 'click', function(event) {
+            addMarker(event.latLng, map);
+          });
+
+          // Add a marker at the center of the map.
+          addMarker(bangalore, map);
+        }
+
+        // Adds a marker to the map.
+        function addMarker(location, map) {
+          // Add the marker at the clicked location, and add the next-available label
+          // from the array of alphabetical characters.
+          var marker = new google.maps.Marker({
+            position: location,
+            label: labels[labelIndex++ % labels.length],
+            map: map
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+</head>
+<body>
+    <section id="header_all" class="fadein container-fluid">
+        
+
+        <div id="logo_all" class="container">
+
+            <div class="header  row">
+
+                <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 col-md-2 col-md-offset-5 "style="margin-top:45px;margin-bottom:45px;">
+                    <a href="index.html">
+                        <img id="logo" class="logoTrans" src="./image/logo.png" alt="嚞醬串燒-復活節島459號站" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="navbar" class="col-xs-12 col-md-10 col-md-offset-1 ">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid" style="margin-top:2.5px;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="justified" class="nav nav-justified">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="https://www.facebook.com/%E5%9A%9E%E9%86%AC%E4%B8%B2%E7%87%92-%E5%BE%A9%E6%B4%BB%E7%AF%80%E5%B3%B6459%E8%99%9F%E7%AB%99-444063842464491/">最新消息</a></li>
+                        <li><a href="about.html">關於本店</a></li>
+                        <li><a href="album.html">精選相簿</a></li>
+                        <li><a href="contact.html">聯絡方式</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </section>
+    <section id="about_all" class="container-fluid">
+        <div id="about_title" class="container">
+            <img class="moaiTitle_right" src="./image/title_right.png" alt="關於本店">
+            <h1>關於本店</h1>
+        </div>
+
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-3">
+                    <img src="./image/album7.jpg" class="img-responsive img-rounded" />
+                </div>
+                <div class="col-sm-7 col-md-9">
+                    <div class="jumbotron about_content ">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            本店由來
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body" 　>
+                                        　　鑒於台中海線地區沒有市區繁華，想品嘗串燒的客人，往往都得驅車前往市區，造成許多不方便。老闆身為在地人，奮不顧身想為海線地區添加一點氣氛與美味俱佳的聚會場所。於是，我們在2015年7月於沙鹿北勢東商圈內成立，
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            經營理念
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                       　　為了發掘新顧客，以及鞏固老顧客，我們不時會推出新的菜色，都是在市面上獨創的菜色。在品質上，我們不輸給其他名店，每個計劃都由老闆親自參與規劃。每份餐點，都是絞盡腦汁試驗出來的產品，必屬佳餚。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            本店特色
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        　　我們有最新穎的點子，融會貫通到菜色上。我們有極佳的環境，適合您攜家帶眷聚會。在裝潢上，我們參考了loft風格使得店內寬敞並有格調，我們的吉祥物是摩艾石像，不管店內與店外都可以看到他的蹤影。本店的菜色由其創新，除了基本的菜色之外，還另有我們獨創菜色，等待您來品嘗。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div id="toolBar" class="container">
+            <div class="row">
+                <div id="search" class="col-xs-12 col-sm-7 col-md-5">
+                    <gcse:search></gcse:search>
+                </div>
+                <div id="google_translate_element" class="col-xs-5 col-sm-3 col-md-2"></div>
+            </div>
+
+        </div>
+        <div class="footer_content container">
+            <div class="row">
+                <div class="col-sm-6 content">
+                    <h1>嚞醬串燒</h1>
+                    <h2>復活節島459號</h2>
+                    <p>2015年7月創立於台中沙鹿，獨創菜色、特色裝潢，是聊天聚會的好地方。</p>
+                    <p>台中市沙鹿區北勢東路459號</p>
+                    <p>聯絡電話 0919-807-802</p>
+                    <p>營業時間：PM19:00-AM01:00</p>
+                    <p>歡迎來電預約</p>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="fb-comments" data-href="http://www.cs.pu.edu.tw/~s1031623/1041project/" data-numposts="2" data-width="100%"></div>
+                </div>
+                <div class="col-xs-12 copyright">
+                    <p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2015 FayW Studio</p>
+                    <p><a href="sitemap.html">Sitemap</a></p>
+                    <div id="fb" class="">
+                        <div class="fb-like" data-href="http://www.cs.pu.edu.tw/~s1031623/1041project/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="footer_img">
+        <img src="./image/footer.png" />
+    </section>
+    <!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--google translate-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,ja,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--google search-->
+    <script>
+      (function() {
+        var cx = '005916154315373715477:nu-alwf9aja';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <!--slide-->
+    <script type="text/javascript" src="./js/jquery.slides.js"></script>
+    <!--Facebook-->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5&appId=465297146977944";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+</body>
+</html>
