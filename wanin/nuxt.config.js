@@ -1,16 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
 
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/wanin/'
-        }
-      }
-    : {}
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target :'static',
+  router: {
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/wanin/' : '/'
+  },
   head: {
     titleTemplate: '%s - wanin',
     title: 'wanin',
@@ -74,7 +70,4 @@ export default {
     transpile: ['vuetify'],
     publicPath: '/wanin/_nuxt/'
   },
-  router:{
-    base: '/wanin/'
-  }
 }
