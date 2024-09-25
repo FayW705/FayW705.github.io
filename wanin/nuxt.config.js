@@ -1,6 +1,13 @@
 import colors from 'vuetify/es5/util/colors'
 
-
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/wanin/'
+        }
+      }
+    : {}
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
