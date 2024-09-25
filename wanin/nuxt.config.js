@@ -65,10 +65,11 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['vuetify'],
-    publicPath: '/wanin/_nuxt/'
+    publicPath: '/nuxt/'
   },
   target :'static',
   router: {
     base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/wanin/' : '/'
   }
 }
+
